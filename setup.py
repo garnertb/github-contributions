@@ -4,7 +4,7 @@ setup(
     name='github-contributions',
     version='1.0.0',
     packages=['github_contributions'],
-    url='https://github.com/garnertb/github_contributions',
+    url='https://github.com/garnertb/github-contributions',
     license='GNU General Public License',
     author='Tyler Garner',
     author_email='garnertb@prominentedge.com',

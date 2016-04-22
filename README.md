@@ -1,4 +1,4 @@
-# github_contributions
+# github-contributions
 
 ![Github Contributions](/img/contributions.png?raw=true "Contributions Screenshot")
 

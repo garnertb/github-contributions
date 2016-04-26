@@ -24,10 +24,10 @@ def get_contributions(usernames):
 
         bs = BeautifulSoup(response.content, "html.parser")
         total, longest_streak, current_streak = bs.find_all('span', 'contrib-number')
-        contributions['users'].append({username: dict(total=int(total.text.split()[0]),
-                                                      longest_streak=int(longest_streak.text.split()[0]),
-                                                      current_streak=int(current_streak.text.split()[0]))})
-        contributions['total'] += int(total.text.split()[0])
+        contributions['users'].append({username: dict(total=int(total.text.split()[0].replace(',', '')),
+                                                      longest_streak=int(longest_streak.text.split()[0].replace(',', '')),
+                                                      current_streak=int(current_streak.text.split()[0].replace(',', '')))})
+        contributions['total'] += int(total.text.split()[0].replace(',', ''))
 
     return json.dumps(contributions, indent=4)
 

@@ -19,7 +19,7 @@ def get_contributions(usernames):
         response = requests.get('{0}{1}'.format(GITHUB_URL, username))
 
         if not response.ok:
-            contributions['users'].append({username: dict(total=0, longest_streak=0, current_streak=0)})
+            contributions['users'].append({username: dict(total=0)})
             continue
 
         bs = BeautifulSoup(response.content, "html.parser")

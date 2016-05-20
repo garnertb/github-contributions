@@ -3,7 +3,7 @@
 ![Github Contributions](/img/contributions.png?raw=true "Contributions Screenshot")
 
 This is a Python module that returns a Github user's public contribution counts.  I built this because we wanted to
-  show off public contribution counts on our website but the GitHub API does not expose the aggregate contribution
+  show off contribution counts on our website but the GitHub API does not expose the aggregate contribution
   statistics on the user resource.
 
 ## install
@@ -14,7 +14,7 @@ This is a Python module that returns a Github user's public contribution counts.
 
 ### `get_contributions(usernames)`
 
-Given a string or sequence of usernames returns the public Github contribution counts as JSON.
+Given a string or sequence of usernames returns the Github contribution counts as JSON.
 
 
 ## example
@@ -31,8 +31,6 @@ get_contributions('garnertb')
     "users": [
         {
             "garnertb": {
-                "longest_streak": 19,
-                "current_streak": 6,
                 "total": 986
             }
         }
@@ -50,8 +48,6 @@ Use the `contributions` command to get contribution counts from the command line
     "users": [
         {
             "garnertb": {
-                "longest_streak": 19,
-                "current_streak": 6,
                 "total": 986
             }
         }

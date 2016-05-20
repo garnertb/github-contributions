@@ -27,11 +27,11 @@ get_contributions('garnertb')
 
 # Returns:
 {
-    "total": 986,
+    "total": 1094,
     "users": [
         {
             "garnertb": {
-                "total": 986
+                "total": 1094
             }
         }
     ]
@@ -44,11 +44,11 @@ Use the `contributions` command to get contribution counts from the command line
 ```shell
 (git_contributions)$ contributions garnertb
 {
-    "total": 986,
+    "total": 1094,
     "users": [
         {
             "garnertb": {
-                "total": 986
+                "total": 1094
             }
         }
     ]

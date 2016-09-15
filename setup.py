@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='github-contributions',
-    version='1.1.1',
+    version='1.1.2',
     packages=['github_contributions'],
     url='https://github.com/garnertb/github-contributions',
     license='GNU General Public License',

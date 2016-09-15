@@ -23,7 +23,7 @@ def get_contributions(usernames):
             continue
 
         bs = BeautifulSoup(response.content, "html.parser")
-        total = bs.find('div', {'class': 'contributions-calendar'}).findPrevious('h3')
+        total = bs.find('div', {'class': 'js-contribution-graph'}).findNext('h2')
         contributions['users'].append({username: dict(total=int(total.text.split()[0].replace(',', '')))})
         contributions['total'] += int(total.text.split()[0].replace(',', ''))
 

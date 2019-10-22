@@ -10,7 +10,7 @@ setup(
     author_email='garnertb@prominentedge.com',
     description='Scrape Github for a user\'s public contributions.',
     install_requires=[
-        'requests==2.9.1',
+        'requests==2.20.0',
         'bs4==0.0.1',
         'click==6.6'
     ],
